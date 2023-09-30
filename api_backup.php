@@ -29,14 +29,14 @@ if(isset($_GET['action']) && $_GET['action']!='')
 			}
 		}
 		else{
-			 $response["status"] = "false";
+			$response["status"] = "false";
 			$response["message"] = "No user(s) found!";
 		}
 	}
-	else if($_GET['action'] == "signup")
+	else if($_GET['action'] == "register_user")
 	{
-		if ((isset($_GET['username']) && $_GET['username']!="") && (isset($_GET['password']) && $_GET['password']!="") && (isset($_GET['name']) && $_GET['name']!="") && (isset($_GET['cnic']) && $_GET['cnic']!="") && (isset($_GET['address']) && $_GET['address']!="")) 
-		{
+		if ((isset($_GET['username']) && $_GET['username']!="") && (isset($_GET['password']) && $_GET['password']!="") && (isset($_GET['name']) && $_GET['name']!="") && (isset($_GET['cnic']) && $_GET['cnic']!="") && (isset($_GET['address']) && $_GET['address']!="")) {
+			
 			$username = $_GET['username'];
 			$password = $_GET['password'];
 			$name = $_GET['name'];
